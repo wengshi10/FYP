@@ -44,8 +44,12 @@ qr_hint_app/
 
 2. Create a virtual environment and activate it:
    ```bash
-   python3 -m venv venv
-   source venv/bin/activate
+   python -m venv venv
+    .\venv\Scripts\Activate.ps1
+   ```
+   - if it shows unauthorized access: typed:
+   ```bash
+   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope
    ```
 
 3. Install dependencies:
