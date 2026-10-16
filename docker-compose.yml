@@ -26,8 +26,8 @@ services:
         target: /home/${CONTAINER_USER}/shared
         # do NOT make target the home directory because
         # setup will write into it before bind takes effect
-    # ports:
-    #   - "5432:5432"
+    ports:
+       - "127.0.0.1:5432:5432"
     expose:
       - "5432"
     networks:
